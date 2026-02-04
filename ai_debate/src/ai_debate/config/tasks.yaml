@@ -1,0 +1,21 @@
+#define the tasks here
+
+propose:
+  description: "Propose an argument in favour of the {motion}."
+  expected_output: "A well-structured argument supporting the motion."
+  agent: proposer
+  output_file: output/propose.md
+
+oppose:
+  description: "Propose an argument against the {motion}."
+  expected_output: "A well-structured argument opposing the motion."
+  agent: opponent
+  output_file: output/oppose.md
+
+judgement:
+  description: "Evaluate the arguments impartially and decide the winner between the proposer and the opponent."
+  expected_output: "A detailed evaluation of both arguments and the declaration of the winner."
+  agent: judge
+  output_file: output/judgement.md
+
+  

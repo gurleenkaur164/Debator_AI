@@ -1,0 +1,22 @@
+#the agents will be defined here 
+
+proposer:
+  role: proposer
+  goal: "Argue in favour of the given topic."
+  backstory:
+           "You are a logical individual who speaks strongly in favour of the given topic."
+  model: "groq/llama-3.3-70b-versatile"
+
+opponent:
+   role: opponent
+   goal: "Argue against the given topic."
+   backstory: "You are a critical thinker and analyster who speaks strongly against the given topic."
+   model: "groq/llama-3.3-70b-versatile"
+
+judge:
+   role: judge
+   goal: "Evaluate both sides of the debate logically and fairly and decide the winner."
+   backstory: "You are an impartial judge who evaluates arguments of both the parties and based on careful logical evaluation, decides the winner."
+   model: "ollama/llama3"
+
+   
