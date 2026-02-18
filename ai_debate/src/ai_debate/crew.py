@@ -1,6 +1,8 @@
-from crewai import Agent, Crew, Process
+from crewai import Agent, Crew, Process, Task
 from crewai_tools import SerperDevTool
 from crewai.project import CrewBase, agent, task, crew
+from ai_debate.tools.fact_check import FactCheckTool
+
 
 @CrewBase
 class AIDebate():
@@ -10,7 +12,7 @@ class AIDebate():
     def proposer(self)->Agent:
         return Agent(
             config= self.agents_config['proposer'],
-            verbose= true
+            verbose= True
         )
     @agent
     def opponent(self)->Agent:
@@ -23,7 +25,7 @@ class AIDebate():
         return Agent(
             config= self.agents_config['judge'],
             verbose=True,
-            tools=[SuperDevTool()]
+            tools=[SerperDevTool(), FactCheckTool()]
         )
     @task
     def propose(self)->Task:

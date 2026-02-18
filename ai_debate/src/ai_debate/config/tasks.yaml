@@ -13,7 +13,7 @@ oppose:
   output_file: output/oppose.md
 
 judgement:
-  description: "Evaluate the arguments impartially and decide the winner between the proposer and the opponent."
+  description: "Evaluate the arguments impartially and decide the winner between the proposer and the opponent. You must use the fact check tool and the scoring tool."
   expected_output: "A detailed evaluation of both arguments and the declaration of the winner."
   agent: judge
   output_file: output/judgement.md

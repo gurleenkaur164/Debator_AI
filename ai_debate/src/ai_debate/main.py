@@ -1,4 +1,6 @@
 from ai_debate.crew import AIDebate
+from dotenv import load_dotenv
+
 
 def run():
     motion= input("Enter the topic for debate:")
